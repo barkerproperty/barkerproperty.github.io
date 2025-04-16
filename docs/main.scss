@@ -4,15 +4,15 @@ body {
     "Helvetica Neue", Arial, sans-serif;
 }
 
-#content {
-  position: absolute;
-  margin: auto;
-  top: 50%;
-  left: 50%;
+#wrapper {
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
 }
 
-#content img {
-  max-width: 300px;
+#wrapper img {
   margin: auto;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -21,7 +21,7 @@ body {
   animation: fadein 3s;
 }
 
-#content p {
+#wrapper p {
   text-align: center;
   line-height: 140%;
 }

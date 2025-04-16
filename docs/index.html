@@ -3,14 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>Barker Property</title>
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="content">
+    <div class="wrapper">
       <img src="/assets/logo.png" alt="Barker Property Logo" />
       <p>
         Looking for accomodation in Melbourne?<br />
         Call us: <a href="tel:+61412345678">+61 437 807 666</a>
       </p>
+      <img src="/assets/logo.png" alt="Barker Property Logo" />
+    </div>
+    <script>
+      // Set CSS variable for the actual viewport height
+      function setViewportHeight() {
+        document.documentElement.style.setProperty(
+          "--vh",
+          window.innerHeight * 0.01 + "px"
+        );
+      }
+
+      setViewportHeight();
+      window.addEventListener("resize", setViewportHeight);
+    </script>
   </body>
 </html>
