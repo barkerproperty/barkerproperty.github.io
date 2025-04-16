@@ -1,0 +1,51 @@
+/*
+Error: Invalid CSS after "": expected selector, was "<!DOCTYPE html>"
+        on line 1 of docs/index.html
+
+1: <!DOCTYPE html>
+2: <html lang="en">
+3:   <head>
+4:     <meta charset="UTF-8" />
+5:     <title>Barker Property</title>
+6:     <link rel="stylesheet" href="/main.css" />
+
+Backtrace:
+docs/index.html:1
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1218:in `expr!'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:434:in `visit_rule'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/opt/local/lib/ruby3.3/gems/3.3.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"\": expected selector, was \"<!DOCTYPE html>\"\A         on line 1 of docs/index.html\A \A 1: <!DOCTYPE html>\A 2: <html lang=\"en\">\A 3:   <head>\A 4:     <meta charset=\"UTF-8\" />\A 5:     <title>Barker Property</title>\A 6:     <link rel=\"stylesheet\" href=\"/main.css\" />"; }

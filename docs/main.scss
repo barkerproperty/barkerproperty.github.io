@@ -19,3 +19,7 @@ body {
   -o-animation: fadein 3s; /* Opera < 12.1 */
   animation: fadein 3s;
 }
+
+#content p {
+  text-align: center;
+}
