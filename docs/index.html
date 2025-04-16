@@ -2,11 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
     <title>Barker Property</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="./assets/logo.png" alt="Barker Property Logo" />
+    <div class="wrapper">
+      <img src="/assets/logo.png" alt="Barker Property Logo" />
+    </div>
+    <script>
+      // Set CSS variable for the actual viewport height
+      function setViewportHeight() {
+        document.documentElement.style.setProperty(
+          "--vh",
+          window.innerHeight * 0.01 + "px"
+        );
+      }
+
+      setViewportHeight();
+      window.addEventListener("resize", setViewportHeight);
+    </script>
   </body>
 </html>
