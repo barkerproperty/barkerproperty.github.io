@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barker Property</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
       html,
       body {
@@ -23,7 +24,7 @@
       }
 
       .wrapper img {
-        max-width: 200px;
+        max-width: 300px;
         height: auto;
         display: block;
         margin: 0 auto;
@@ -38,15 +39,19 @@
   </head>
   <body>
     <div class="wrapper">
-      <img src="/assets/logo.png" alt="Barker Property Logo" />
-      <p>
-        Looking for stays in Melbourne?<br />
+      <img src="/assets/logo.png" alt="Logo" data-aos="flip-left" />
+      <p data-aos="fade-up">
+        Looking for accommodation in Melbourne?<br />
         📞 <a href="tel:+61412345678">+61 437 807 666</a>
       </p>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      type="text/javascript"
+      src="https://explodinglabs.github.io/refresh.js/refresh.js"
+    ></script>
   </body>
-  <script
-    type="text/javascript"
-    src="https://explodinglabs.github.io/refresh.js/refresh.js"
-  ></script>
 </html>
