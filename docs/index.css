@@ -1,28 +1,228 @@
-html,
-body {
-  margin: 0;
+/* --- Base reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body {
-  background-color: white;
+@font-face {
+  font-family: "CanvaSans";
+  src: url("/fonts/CanvaSans-Regular.woff2") format("woff2");
+  font-weight: 400; /* normal */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CanvaSans";
+  src: url("/fonts/CanvaSans-Bold.woff2") format("woff2");
+  font-weight: 700; /* bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+html {
+  background-color: #113;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
     "Segoe UI", "Liberation Sans", sans-serif;
 }
 
-.wrapper {
-  background-color: white;
-  padding: 2em 2em;
+h1,
+h2,
+h3 {
 }
 
-.wrapper img {
-  max-width: 200px;
-  display: block;
+.nav-wrapper {
+  width: 100%;
+  border-bottom: 0px solid #c9c9c9;
+}
+
+nav {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
+  padding: 0 1rem;
+  height: 4em;
+  font-size: 110%;
+  font-weight: 500;
 }
 
-.wrapper p {
-  text-align: left;
-  margin-top: 2em;
-  font-size: 1.2em;
-  line-height: 180%;
+.subtitle {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    font-size: 120%;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    display: block;
+  }
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between icon and text */
+}
+
+nav .brand::before {
+  content: "";
+  display: inline-block;
+  width: 32px; /* or 32px to match your favicon */
+  height: 32px;
+  background-image: url("/assets/favicon-32.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-top: 10rem;
+  }
+}
+
+h1 {
+  /* color: #440; */
+  color: #eee;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+
+  font-family: "CanvaSans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+  letter-spacing: -0.06em;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: auto;
+  max-width: 800px;
+  color: white;
+  line-height: 150%;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+  margin-bottom: 8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.cta a {
+  color: white;
+  background-color: #007bff;
+  border-radius: 2em;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta a:hover {
+  background-color: #0056b3;
+}
+
+.features {
+  background-color: #9ef;
+  border-radius: 2em;
+  padding: 2rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* centers the whole ul */
+  text-align: left; /* keeps text left-aligned */
+  width: fit-content; /* shrink to content width */
+
+  font-size: 1.5em;
+}
+
+.features li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.features li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.legal {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.legal a {
+  font-size: small;
+  color: #999;
+  text-decoration: none;
 }
